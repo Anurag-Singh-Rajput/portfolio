@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-class {
+  background-color: #181a25;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.navbar-class ul li {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.navbar-class a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Home Section  */
+.home-section {
+  background-color: #181a25;
+  color: white;
+  height: 500px;
+  border-radius: 0 0 5% 5%;
+}
+.home-section h1 {
+  position: relative;
+  float: left;
+  left: 10%;
+  top: 10%;
+  font-size: 3rem;
+}
+.avatar-img {
+  position: relative;
+  height: 70%;
+  border-radius: 50%;
+  float: right;
+  right: 10%;
+  top: 10%;
+}
