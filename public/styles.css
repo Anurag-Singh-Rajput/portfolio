@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+::selection {
+  color: black;
+  background: #59723c;
+}
 /* Navbar Component  */
 .navbar-class {
   background-color: #181a25;
@@ -25,7 +28,7 @@
   background-color: #181a25;
   color: white;
   padding: 3%;
-  height: 480px;
+  height: 75vh;
   border-radius: 0 0 10% 10%;
   text-align: left;
 }
@@ -42,4 +45,49 @@
   position: absolute;
   padding-right: 5%;
   right: 6%;
+}
+
+/* Navigate  */
+.navigate {
+  text-align: center;
+  padding-top: 1%;
+}
+.icon {
+  font-size: 2.5rem;
+  color: #59723c;
+  margin-bottom: 2%;
+  animation: 3s scroll infinite;
+}
+
+/* Skills Section  */
+#skill-section {
+  text-align: center;
+  padding: 0 20%;
+  margin: auto;
+}
+
+.skill-card {
+  margin: 5%;
+  text-align: left;
+}
+
+.skill-img {
+  border-radius: 50%;
+  float: right;
+  height: 10%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
