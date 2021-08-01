@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* Navbar Component  */
 .navbar-class {
   background-color: #181a25;
   text-align: center;
@@ -23,21 +24,22 @@
 .home-section {
   background-color: #181a25;
   color: white;
-  height: 500px;
-  border-radius: 0 0 5% 5%;
+  padding: 3%;
+  height: 480px;
+  border-radius: 0 0 10% 10%;
+  text-align: left;
 }
 .home-section h1 {
-  position: relative;
-  float: left;
-  left: 10%;
-  top: 10%;
   font-size: 3rem;
 }
+
+.home-text {
+  padding: 2% 0 0 15%;
+}
+
 .avatar-img {
-  position: relative;
-  height: 70%;
-  border-radius: 50%;
-  float: right;
-  right: 10%;
-  top: 10%;
+  width: 30%;
+  position: absolute;
+  padding-right: 5%;
+  right: 6%;
 }
