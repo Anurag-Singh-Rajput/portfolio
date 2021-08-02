@@ -7,9 +7,9 @@ function Skills(){
             <div className = "container-fluid">
                 <h1>Skills</h1>
             </div>
-    <SkillCard/>
-    <SkillCard/>
-    <SkillCard/>
+                <SkillCard/>
+                <SkillCard/>
+                <SkillCard/>
         </section>
     );
 }
