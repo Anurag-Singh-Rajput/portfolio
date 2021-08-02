@@ -17,6 +17,10 @@
   display: inline-block;
   margin: 5px 10px;
 }
+nav > ul > li > :hover {
+  color: #59723c;
+  border-bottom: 2px solid #59723c;
+}
 
 .navbar-class a {
   text-decoration: none;
@@ -81,6 +85,19 @@
   align-self: center;
 }
 
+/* Footer Section  */
+
+.footer {
+  text-align: center;
+  background: #1e2331;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
+/* Animation  */
+
 @keyframes scroll {
   0% {
     transform: translateY(0px);
@@ -94,4 +111,25 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+/* Scroll Bar  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181a25;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #59723c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4b6133;
 }
