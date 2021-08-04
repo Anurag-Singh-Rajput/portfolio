@@ -5,7 +5,8 @@ import Skills from "./Skills";
 import Navigate  from "./Navigate";
 import Footer from "./Footer";
  function App(){
-    return (<div>
+    return (
+    <div>
     <Header />
     <Home/>
     <Navigate/>

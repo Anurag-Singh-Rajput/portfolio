@@ -37,6 +37,7 @@ nav > ul > li > :hover {
   padding: 3%;
   height: 75vh;
   border-radius: 0 0 10% 10%;
+  box-shadow: 0 5px 5px #10121a;
   text-align: left;
 }
 .home-section h1 {
@@ -85,17 +86,41 @@ nav > ul > li > :hover {
   float: right;
   position: relative;
   height: 10rem;
+  box-shadow: 1px 1px 12px #181a25;
 }
 .each-card {
   align-self: center;
 }
+.each-card > ul > a {
+  color: #71ad2d;
+}
 
 .bar {
   display: block;
-  background-color: #59723c;
+  background-color: #181a25;
   margin: 2% 0;
   width: 100%;
   height: 5px;
+}
+
+.skill-bar {
+  position: relative;
+  background-color: #59723c;
+  margin: 2% 0;
+  height: 5px;
+  animation: progress 3s;
+}
+.skill-bar ::before {
+  content: attr(percent-val);
+  background-color: #384727;
+  position: absolute;
+  height: 15px;
+  width: 20px;
+  right: 0;
+  font-size: 9px;
+  align-content: center;
+  text-align: center;
+  top: -100%;
 }
 
 /* Footer Section  */
@@ -123,6 +148,15 @@ nav > ul > li > :hover {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
