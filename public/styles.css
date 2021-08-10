@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 html > body {
   background-color: #1e2331;
@@ -9,6 +10,7 @@ html > body {
   color: black;
   background: #59723c;
 }
+
 /* Navbar Component  */
 .navbar-class {
   background-color: #181a25;
@@ -123,6 +125,27 @@ nav > ul > li > :hover {
   top: -100%;
 }
 
+/* Contact Section  */
+.contact-section {
+  text-align: center;
+  margin: 2% 20%;
+}
+.form-container {
+  text-align: left;
+}
+.form-group {
+  text-align: left;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin: 2%;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #71ad2d;
+  box-shadow: 0 0 5px #71ad2d;
+}
 /* Footer Section  */
 
 .footer {
