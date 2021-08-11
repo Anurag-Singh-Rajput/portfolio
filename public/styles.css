@@ -113,16 +113,19 @@ nav > ul > li > :hover {
   animation: progress 3s;
 }
 .skill-bar ::before {
-  content: attr(percent-val);
-  background-color: #384727;
+  /* content: attr(percent-val); */
+  content: "";
+  background-color: #71ad2d;
   position: absolute;
   height: 15px;
-  width: 20px;
+  width: 15px;
   right: 0;
   font-size: 9px;
   align-content: center;
   text-align: center;
   top: -100%;
+  transform: translateX(50%);
+  border-radius: 50%;
 }
 
 /* Contact Section  */

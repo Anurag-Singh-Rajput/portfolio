@@ -10,8 +10,8 @@ const webSkill = [
     },
     {
         id : 2,
-        name : "CSS",
-        progress : "75%",
+        name : "JS",
+        progress : "65%",
         imgSrc : "https://media.giphy.com/media/8PpFJcG4y8HqsxQumz/giphy.gif",
         heading : "Web Development"
 
@@ -19,8 +19,8 @@ const webSkill = [
     },
     {
         id : 3,
-        name : "JS",
-        progress : "65%",
+        name : "CSS",
+        progress : "75%",
         imgSrc : "https://media.giphy.com/media/8PpFJcG4y8HqsxQumz/giphy.gif",
         heading : "Web Development"
 

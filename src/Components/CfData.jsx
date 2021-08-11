@@ -6,7 +6,6 @@ function MyComponent() {
     useEffect(() => {
       axios.get("https://codeforces.com/api/user.info?handles=Anurag-Singh-Rajput#")
         .then(res => {
-          console.log(res.data.result[0]);
           setData(res.data.result[0])
         })
         .catch(err => {

@@ -10,13 +10,16 @@ function Skills(){
                 <h1>Skills</h1>
             </div>
         <Skill 
+            key = {skillArray.id}
             array = {skillArray}
         />
         <Skill 
+            key = {graphicSkill.id}
             array = {graphicSkill}
             message = {"Check out my work"}
         />
         <Skill 
+            key = {webSkill.id}
             array = {webSkill}
         />
         </section>

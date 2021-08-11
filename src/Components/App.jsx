@@ -8,7 +8,6 @@ import Footer from "./Footer";
 // import skills from "./data";
 // import Skill from "./Skill";
 import ContactCard from "./Contact";
-import MyComponent from "./CfData";
  function App(){
     return (
     <div>
