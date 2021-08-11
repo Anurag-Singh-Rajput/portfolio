@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent from "./CfData";
 function Skill(props){
 return(
     <div className = "skill-card">
@@ -18,6 +19,7 @@ return(
 </div>);
         })
     }
+    {(props.array[0].heading === "Coding") ? <MyComponent/> : null}
     <a href = "fb.com">{props.message}</a>
 </ul>
 </div>
