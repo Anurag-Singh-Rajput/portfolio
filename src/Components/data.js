@@ -1,19 +1,21 @@
 const skills = [
     {
         id : 1,
-        name : "C++",
-        progress : "80%",
+        name : "C",
+        progress : "70%",
         imgSrc : "https://media.giphy.com/media/a8rlSHPozsTEuh1ibJ/giphy.gif",
         heading : "Coding"
-
 
     },
     {
         id : 2,
-        name : "C",
-        progress : "70%",
+        name : "C++",
+        progress : "80%",
+     
+
 
     },
+  
     {
         id : 3,
         name : "Java",

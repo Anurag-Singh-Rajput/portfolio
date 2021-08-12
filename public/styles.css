@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
 }
 html > body {
   background-color: #1e2331;
@@ -129,26 +128,7 @@ nav > ul > li > :hover {
 }
 
 /* Contact Section  */
-.contact-section {
-  text-align: center;
-  margin: 2% 20%;
-}
-.form-container {
-  text-align: left;
-}
-.form-group {
-  text-align: left;
-}
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  margin: 2%;
-}
-input:focus {
-  outline: none;
-  border: 2px solid #71ad2d;
-  box-shadow: 0 0 5px #71ad2d;
-}
+
 /* Footer Section  */
 
 .footer {
@@ -205,4 +185,99 @@ input:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #4b6133;
+}
+
+/* TESTING  */
+
+.form {
+  text-align: center;
+  padding: 3% 20%;
+  color: white;
+  margin: auto;
+}
+
+.form-class {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-class .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  margin: 5% 0 5%;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.contact-img {
+  border-radius: 50%;
+}
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #506836;
+  border-radius: 2% 0 0 2%;
+  padding: 15%;
+}
+.form-right {
+  background-color: #181a25;
+}
+
+.submit-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #506836;
+  border: none;
+  height: 40px;
+  width: 30%;
+  border-radius: 20px;
+}
+.form-class > input,
+.form-class > textarea {
+  border-radius: 100px;
+  background-color: #1e2331;
+  border: none;
+  color: white;
+}
+.form-class > input::placeholder,
+.form-class > textarea::placeholder {
+  color: rgb(173, 173, 173);
+  padding: 2% 10px;
+}
+.form-class > input:focus,
+.form-class > textarea:focus {
+  border-color: #4b6133;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #71ad2d;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #608f2a;
+}
+.form-right > .form-class > input:focus,
+.form-right > .form-class > textarea:focus {
+  background-color: #181a25;
+  color: white;
 }
