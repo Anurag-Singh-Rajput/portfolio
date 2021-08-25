@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLongArrowAltDown } from '@fortawesome/free-solid-svg-icons'
 import React from "react";
 
 function Navigate(){
 return(
     <div className = "navigate">
-   <FontAwesomeIcon className = "icon" icon =  {faLongArrowAltDown}/>
+   <i class="fas fa-long-arrow-alt-down icon"></i>
     </div>
 );
 }
