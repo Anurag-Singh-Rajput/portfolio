@@ -1,12 +1,13 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function MyComponent() {
     const [cfData, setData] = useState([]);
     useEffect(() => {
-      axios.get("https://codeforces.com/api/user.info?handles=Anurag-Singh-Rajput#")
+      axios.get("/cfRatings")
         .then(res => {
-          setData(res.data.result[0])
+          setData(res.data)
+          console.log(res.data)
         })
         .catch(err => {
           console.log(err);

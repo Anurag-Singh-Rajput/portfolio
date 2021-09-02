@@ -23,12 +23,23 @@ html > body {
 }
 nav > ul > li > :hover {
   color: #59723c;
-  border-bottom: 2px solid #59723c;
 }
 
 .navbar-class a {
   text-decoration: none;
   color: white;
+}
+.navbar-class a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.navbar-class a:hover:after {
+  width: 100%;
+  background: #59723c;
 }
 
 /* Home Section  */
@@ -115,6 +126,7 @@ nav > ul > li > :hover {
   height: 5px;
   animation: progress 3s;
 }
+
 .skill-bar ::before {
   /* content: attr(percent-val); */
   content: "";
@@ -165,22 +177,80 @@ nav > ul > li > :hover {
   align-items: center;
   margin: 2% 5%;
   border-radius: 50%;
-  background-color: #14151f;
 }
 
 .fa-whatsapp:hover {
+  animation: social-whatsapp 2s linear infinite;
   text-shadow: #25d366 1px -2px 10px, #dcf8c6 -1px 0px 10px,
     #075e54 1px 1px 10px;
 }
 .fa-instagram:hover {
+  animation: social-instagram 2s linear infinite;
   text-shadow: #fd1d1d 1px 1px 10px, #5851db -1px 1px 10px,
     #fcaf45 -1px -2px 10px;
 }
 .fa-github:hover {
-  text-shadow: #6e5494 2px 0px 10px, #6e5494 -1px -1px 10px,
+  animation: social-github 2s linear infinite;
+  text-shadow: #6e5494 2px 0px 10px, #634099 -1px -1px 10px,
     #4078c0 1px -1px 10px;
 }
 /* Animation  */
+
+/* Social Media Icons  */
+@keyframes social-whatsapp {
+  0% {
+    text-shadow: #25d366 1px -2px 10px, #dcf8c6 -1px 0px 10px,
+      #075e54 1px 1px 10px;
+  }
+  30% {
+    text-shadow: #25d366 3px -2px 12px, #075e54 -1px 4px 10px,
+      #dcf8c6 -3px 5px 11px;
+  }
+  60% {
+    text-shadow: #dcf8c6 -1px -2px 12px, #075e54 -1px 1px 11px,
+      #25d366 4px 1px 10px;
+  }
+  100% {
+    text-shadow: #25d366 1px -2px 10px, #dcf8c6 -1px 0px 10px,
+      #075e54 1px 1px 10px;
+  }
+}
+@keyframes social-instagram {
+  0% {
+    text-shadow: #fd1d1d 1px -2px 10px, #5851db -1px 0px 10px,
+      #fcaf45 1px 1px 11px;
+  }
+  30% {
+    text-shadow: #5851db -1px 2px 12px, #fd1d1d -1px 1px 10px,
+      #fcaf45 1px 3px 9px;
+  }
+  60% {
+    text-shadow: #fcaf45 -1px -1px 11px, #5851db -1px 1px 10px,
+      #fd1d1d 4px 1px 10px;
+  }
+  100% {
+    text-shadow: #fd1d1d 1px -2px 10px, #5851db -1px 0px 10px,
+      #fcaf45 1px 1px 10px;
+  }
+}
+@keyframes social-github {
+  0% {
+    text-shadow: #6e5494 1px -2px 10px, #634099 -1px 3px 10px,
+      #4078c0 1px 1px 10px;
+  }
+  30% {
+    text-shadow: #634099 3px 2px 10px, #6e5494 1px 4px 10px,
+      #4078c0 -3px 5px 10px;
+  }
+  60% {
+    text-shadow: #4078c0 -1px -2px 10px, #634099 -2px 2px 10px,
+      #6e5494 4px 1px 10px;
+  }
+  100% {
+    text-shadow: #6e5494 1px -2px 10px, #634099 -1px 0px 10px,
+      #4078c0 1px 1px 10px;
+  }
+}
 
 @keyframes scroll {
   0% {
@@ -227,7 +297,21 @@ nav > ul > li > :hover {
   background: #4b6133;
 }
 
-/* Social media Animations  */
+/* Submit-Btn  */
+@keyframes submit {
+  0% {
+    background-color: #506836;
+  }
+  35% {
+    background-color: #506836;
+  }
+  70% {
+    background-color: #3f5528;
+  }
+  100% {
+    background-color: #3f5528;
+  }
+}
 
 /* TESTING  */
 
@@ -283,7 +367,6 @@ nav > ul > li > :hover {
   align-items: center;
   justify-content: center;
   background-color: #506836;
-  border-radius: 2% 0 0 2%;
   padding: 15%;
 }
 .form-right {
@@ -291,13 +374,22 @@ nav > ul > li > :hover {
 }
 
 .submit-btn {
-  text-decoration: none;
-  color: white;
   background-color: #506836;
+  color: white;
   border: none;
   height: 40px;
   width: 30%;
   border-radius: 20px;
+}
+.submit-btn > a,
+.submit-btn > a:hover {
+  text-decoration: none;
+  color: white;
+}
+.submit-btn:hover {
+  color: white;
+  animation: submit 0.8s linear;
+  background-color: #3f5528;
 }
 .form-class > input,
 .form-class > textarea {
