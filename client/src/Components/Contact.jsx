@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 function ContactCard(){
   const[name, setName] = useState("");
 
@@ -8,25 +7,8 @@ function ContactCard(){
     console.log(newName);
     setName(newName);
   }
-
-// -----------------PRIVATE DATA :: Remove Later ------------------
- 
-  //  -------------------------------------------------------------
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm(serviceId, tempId, e.target, userId)
-      .then((result) => {
-        alert("I got your message ✔");
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-      setName("");
-  }
-
     return (
+      <section id ="form-section">
         <div class="form">
   <div class="row">
     <div class="col-lg-6 form-left">
@@ -34,7 +16,7 @@ function ContactCard(){
       <p>I love to talk about web series, anime, coding? What you got?</p>
     </div>
     <div class="col-lg-6 form-right">
-          <form class="form-class" onSubmit = {sendEmail}>
+          <form class="form-class" action = "send" method = "POST">
               <img class="mb-4 contact-img" src="https://media.giphy.com/media/rWLXay3IYwyeQL1Pkn/giphy.gif" alt="msg-img" width="120"
                   height="120" />
               <input type="text" class="form-control top" placeholder="Name" onChange = {handleChange} name = "userName" autocomplete="off" value = {name} required />
@@ -48,6 +30,7 @@ function ContactCard(){
   </div>
   
 </div>
+</section>
     );
 }
 

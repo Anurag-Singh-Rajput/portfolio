@@ -20,7 +20,7 @@ return(
         })
     }
     {(props.array[0].heading === "Coding") ? <MyComponent/> : null}
-    <a href = "fb.com">{props.message}</a>
+    <a href = "#design-section">{props.message}</a>
 </ul>
 </div>
 <div class="col-sm-6 each-card">

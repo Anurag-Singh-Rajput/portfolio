@@ -415,3 +415,26 @@ nav > ul > li > :hover {
   background-color: #181a25;
   color: white;
 }
+
+/* _____BOOTSTRAP CAROUSEL_____ */
+.carousel-class {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 30px 0;
+}
+.carousel-class > #carouselExampleCaptions {
+  width: 40%;
+}
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  /* min-height: 500px; */
+  height: 100%;
+  width: 100%;
+}

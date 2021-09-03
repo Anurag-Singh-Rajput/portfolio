@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Navigate  from "./Navigate";
 import Footer from "./Footer";
 import ContactCard from "./Contact";
+import ImageGallery from "./ImageGallery";
  function App(){
     return (
     <div>
@@ -13,6 +14,7 @@ import ContactCard from "./Contact";
       <Navigate/>
       <Skills/>
       <ContactCard/>
+      <ImageGallery/>
       <Footer/>
     </div>
     );
