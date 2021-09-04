@@ -4,6 +4,7 @@
 }
 html > body {
   background-color: #1e2331;
+  font-family: "Monserrat", serif;
 }
 ::selection {
   color: black;
@@ -20,6 +21,7 @@ html > body {
 .navbar-class ul li {
   display: inline-block;
   margin: 5px 10px;
+  font-size: 1.5rem;
 }
 nav > ul > li > :hover {
   color: #59723c;
@@ -52,15 +54,33 @@ nav > ul > li > :hover {
   box-shadow: 0 5px 5px #10121a;
   text-align: left;
 }
-.home-section h1 {
-  font-size: 3rem;
-  color: #59723c;
-}
 
 .home-text {
   padding: 2% 0 0 15%;
 }
-
+.home-text > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.home-text > h1 {
+  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+  color: #59723c;
+  margin-bottom: 3%;
+}
+.home-text > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+.home-a {
+  text-decoration: none;
+  color: #71ad2d;
+}
+.home-a:hover {
+  color: #71ad2d;
+  text-decoration: underline;
+}
 .avatar-img {
   width: 30%;
   position: absolute;
@@ -109,8 +129,9 @@ nav > ul > li > :hover {
 }
 .each-card > ul > a {
   color: #71ad2d;
+  position: absolute;
+  margin-top: 2%;
 }
-
 .bar {
   display: block;
   background-color: #14151f;
@@ -122,7 +143,7 @@ nav > ul > li > :hover {
 .skill-bar {
   position: relative;
   background-color: #59723c;
-  margin: 2% 0;
+  margin: 1% 0 3% 0;
   height: 5px;
   animation: progress 3s;
 }
@@ -194,6 +215,134 @@ nav > ul > li > :hover {
   text-shadow: #6e5494 2px 0px 10px, #634099 -1px -1px 10px,
     #4078c0 1px -1px 10px;
 }
+
+/* _____BOOTSTRAP CAROUSEL_____ */
+.carousel-class {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 30px 0;
+}
+.carousel-class > #carouselExampleCaptions {
+  width: 40%;
+}
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  /* min-height: 500px; */
+  height: 100%;
+  width: 100%;
+}
+
+/* Form  */
+
+.form {
+  text-align: center;
+  padding: 3% 20%;
+  color: white;
+  margin: auto;
+}
+
+.form-class {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-class .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  margin: 5% 0 5%;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.contact-img {
+  border-radius: 50%;
+}
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #506836;
+  padding: 15%;
+}
+.form-right {
+  background-color: #181a25;
+}
+
+.submit-btn {
+  background-color: #506836;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 30%;
+  border-radius: 20px;
+  margin: 4% 0;
+}
+.submit-btn > a,
+.submit-btn > a:hover {
+  text-decoration: none;
+  color: white;
+}
+.submit-btn:hover {
+  color: white;
+  animation: submit 0.8s linear;
+  background-color: #3f5528;
+}
+.form-class > input,
+.form-class > textarea {
+  border-radius: 100px;
+  background-color: #1e2331;
+  border: none;
+  color: white;
+}
+.form-class > input::placeholder,
+.form-class > textarea::placeholder {
+  color: rgb(173, 173, 173);
+  padding: 2% 10px;
+}
+.form-class > input:focus,
+.form-class > textarea:focus {
+  border-color: #4b6133;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #71ad2d;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #608f2a;
+}
+.form-right > .form-class > input:focus,
+.form-right > .form-class > textarea:focus {
+  background-color: #181a25;
+  color: white;
+}
+
 /* Animation  */
 
 /* Social Media Icons  */
@@ -313,128 +462,98 @@ nav > ul > li > :hover {
   }
 }
 
-/* TESTING  */
+/* Media Queries  */
+@media screen and (max-width: 990px) {
+  /* NAVBAR  */
+  .navbar-class ul li {
+    margin: 5px 10px;
+    padding-top: 4%;
+    font-size: 2.2rem;
+  }
 
-.form {
-  text-align: center;
-  padding: 3% 20%;
-  color: white;
-  margin: auto;
-}
+  /* HOME  */
+  .home-section {
+    display: flex;
+    text-align: center;
+    padding-top: 8%;
+    height: 87vh;
+  }
+  .home-text {
+    padding: 0 10%;
+  }
+  .home-text > h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  .home-text > h1 {
+    font-size: 6rem;
+    color: #59723c;
+    margin-bottom: 9%;
+  }
+  .home-text > p {
+    font-size: 2rem;
+  }
+  .home-section > .row > .col-lg-6 > img {
+    padding-right: initial;
+    right: initial;
+    position: initial;
+    width: 60%;
+  }
 
-.form-class {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-}
+  /* SKILLS  */
+  #skill-section {
+    padding: 3% 5%;
+  }
+  #skill-section > .container-fluid > h1 {
+    font-size: 4rem;
+  }
+  .each-card > h3 {
+    font-size: 2rem;
+    margin-bottom: 9%;
+  }
+  .skill-card {
+    padding-top: 6%;
+  }
+  .each-card > ul {
+    font-size: 1.2rem;
+  }
 
-.form-class .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  margin: 5% 0 5%;
-  font-size: 16px;
-}
+  /* NAVIGATE ICON  */
+  .icon {
+    font-size: 4rem;
+    margin-bottom: 2%;
+  }
 
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.contact-img {
-  border-radius: 50%;
-}
-.top {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.bottom {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.middle {
-  margin-bottom: -1px;
-  border-radius: 0;
-}
-
-.form-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #506836;
-  padding: 15%;
-}
-.form-right {
-  background-color: #181a25;
-}
-
-.submit-btn {
-  background-color: #506836;
-  color: white;
-  border: none;
-  height: 40px;
-  width: 30%;
-  border-radius: 20px;
-}
-.submit-btn > a,
-.submit-btn > a:hover {
-  text-decoration: none;
-  color: white;
-}
-.submit-btn:hover {
-  color: white;
-  animation: submit 0.8s linear;
-  background-color: #3f5528;
-}
-.form-class > input,
-.form-class > textarea {
-  border-radius: 100px;
-  background-color: #1e2331;
-  border: none;
-  color: white;
-}
-.form-class > input::placeholder,
-.form-class > textarea::placeholder {
-  color: rgb(173, 173, 173);
-  padding: 2% 10px;
-}
-.form-class > input:focus,
-.form-class > textarea:focus {
-  border-color: #4b6133;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #71ad2d;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #608f2a;
-}
-.form-right > .form-class > input:focus,
-.form-right > .form-class > textarea:focus {
-  background-color: #181a25;
-  color: white;
+  /* FORM  */
+  .form-left > p {
+    font-size: 1.2rem;
+  }
+  .form-left > h3 {
+    font-size: 2rem;
+  }
 }
 
-/* _____BOOTSTRAP CAROUSEL_____ */
-.carousel-class {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0 30px 0;
-}
-.carousel-class > #carouselExampleCaptions {
-  width: 40%;
-}
-.carousel .carousel-item {
-  height: 400px;
-}
-
-.carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  /* min-height: 500px; */
-  height: 100%;
-  width: 100%;
-}
+/* @media screen and (min-width: 475px) and (max-width: 990px) {
+  .navbar-class ul li {
+    font-size: 1.2rem;
+  }
+  .home-text > h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .home-text > h1 {
+    font-size: 3em;
+    color: #59723c;
+    margin-bottom: 5%;
+  }
+  .home-text > p {
+    font-size: 1rem;
+  }
+  .home-section {
+    padding-top: 1%;
+    height: 87vh;
+  }
+  .home-section > .row > .col-lg-6 > img {
+    width: 30%;
+  }
+} */

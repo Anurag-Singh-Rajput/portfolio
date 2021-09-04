@@ -6,8 +6,8 @@ function Home(){
         <div class="row">
       <div class="col-lg-6">
         <div className = "home-text"><h3>Hello !!</h3>
-        <h1 >I am Anurag !!</h1>
-        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dicta fugiat incit consectetur, adipisicing elit. Quas, recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, possimus. uo culpa animi, molestias quod esse officiis velit!</p>
+        <h1 >I am Anurag</h1>
+        <p class="para">B.Tech, Computer Engineering student at <a href = "http://www.jcboseust.ac.in/" className = "home-a" target = "_blank" rel = "noreferrer">J.C. Bose University of Science and Technology, YMCA Faridabad</a>, web developer, designer, and I like to watch anime apart from staring at my code for hours :)</p>
         </div>
       </div>
       <div class="col-lg-6">
